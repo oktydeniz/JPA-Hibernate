@@ -1,0 +1,12 @@
+2022-08-05 16:02:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table car (id integer not null, brand varchar(255), distance integer not null, model varchar(255), [*]year integer not null, owner_id integer, primary key (id))"; expected "identifier"; SQL statement:
+create table car (id integer not null, brand varchar(255), distance integer not null, model varchar(255), year integer not null, owner_id integer, primary key (id)) [42001-214]
+2022-08-05 16:02:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" not found; SQL statement:
+alter table car add constraint FKgbiqmhhk4njnmkkerl1lvqppk foreign key (owner_id) references person [42102-214]
+2022-08-05 16:02:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" not found; SQL statement:
+alter table person add constraint FKa2l1n4fg13icti3ta3iuxfhxn foreign key (vehicle_id) references car [42102-214]
+2022-08-05 16:03:50 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM IDENTITY_CARD PRODUCTS [*]IDENTITY_CARD"; SQL statement:
+SELECT * FROM IDENTITY_CARD PRODUCTS IDENTITY_CARD [42000-214]
